@@ -7,20 +7,71 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
-    <title>Erkam's GitHub Home Page</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./public/styles/style.css" />
+
+    <title>Erkam G.'s Home Page</title>
   </head>
   <body>
-    <img src="images/erkam g logo 48pt.fw.png" alt="erkam g logo" />
-    <h1 align="center">Hello World!!!</h1>
-    <p align="center">
-      <b>This is my GitHub Home Page </b><br /><br />
-      And it is under construction!!! <br />
-      <br />
-      <img
-        src="under-construction-gif-11.gif"
-        alt="Under Construction"
-        align="center"
-      />
-    </p>
+    <div id="sideBarContainer">
+      <div id="sideNav" class="sidenav">
+        <nav>
+          <img src="./public/images/erkam g logo 48pt.fw.png" alt="" />
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a href="#"
+            ><span>Intro</span> <span><i class="fa fa-home"></i></span
+          ></a>
+          <a href="#"
+            ><span>Portfolio</span> <span> <i class="fa fa-th"></i></span
+          ></a>
+          <a href="#"
+            ><span>About Me </span><span><i class="fa fa-user"></i></span
+          ></a>
+          <a href="#"
+            ><span>Contact</span><span> <i class="fa fa-envelope"></i></span
+          ></a>
+        </nav>
+      </div>
+      <div id="modal-shadow"></div>
+    </div>
+
+    <div id="main">
+      <h2>Sidenav Push Example</h2>
+      <p>
+        Click on the element below to open the side navigation menu, and push
+        this content to the right. Notice that we add a black see-through
+        background-color to body when the sidenav is opened.
+      </p>
+      <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+        >&#9776; open</span
+      >
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById('sideNav').style.width = '250px';
+        document.getElementById('sideBarContainer').style.width = '100%';
+        document.getElementById('sideBarContainer').style.backgroundColor =
+          'rgba(0,0,0,0.4)';
+        // document.getElementById('main').style.marginLeft = '250px';
+
+        // document.body.style.backgroundColor = 'rgba(0,0,0,0.4)';
+      }
+
+      function closeNav() {
+        document.getElementById('sideNav').style.width = '0';
+        document.getElementById('sideBarContainer').style.width = '0';
+        document.getElementById('sideBarContainer').style.backgroundColor =
+          'rgba(0,0,0,0.4)';
+        // document.getElementById('main').style.marginLeft = '0';
+        // document.body.style.backgroundColor = 'white';
+      }
+    </script>
   </body>
 </html>
