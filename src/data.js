@@ -1,3 +1,3 @@
 export const state = {
-  isSideNavOpen: false,
+  isMenuOpen: false,
 };
