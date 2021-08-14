@@ -12,21 +12,19 @@ export function loadRoot() {
   const introContainerDiv = document.createElement('div');
   introContainerDiv.id = 'intro-container';
   introContainerDiv.style.backgroundImage =
-    'url(public/images/fingers-5946228_1920.jpg)';
-  introContainerDiv.style.backgroundSize = 'cover';
-  introContainerDiv.style.backgroundColor =
-    'var(--light-theme-secondary-color)';
-  introContainerDiv.style.backgroundBlendMode = 'soft-light';
-  introContainerDiv.style.color = 'var(--dark-theme-text-color)';
+    'url(public/images/web-4877960_1920.jpg)';
+  introContainerDiv.style.backgroundSize = 'contain';
+
+  //   introContainerDiv.innerHTML = ` <img src="../../public/images/web-4877960_1920.jpg" width="100%" height="150px"/>`;
 
   const introTextDiv = document.createElement('div');
   introTextDiv.id = 'intro-text';
-  introTextDiv.innerHTML = `      <h2>Simple web site</h2>
-  <p>
-    Click on the element below to open the side navigation menu, and push
-    this content to the right. Notice that we add a black see-through
-    background-color to body when the sidenav is opened.
-  </p>`;
+  introTextDiv.style.backgroundColor = 'rgba(100, 100, 100, 0.7)';
+
+  introTextDiv.style.color = '#fff';
+  introTextDiv.innerHTML = `      <br><h2>Hi, I'm Erkam </h2> 
+  <h3>I'm a full-stack web developer</h3><br><br><br>
+  `;
   introContainerDiv.appendChild(introTextDiv);
 
   rootDiv.appendChild(introContainerDiv);
