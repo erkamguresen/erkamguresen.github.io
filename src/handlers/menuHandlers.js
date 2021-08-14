@@ -14,7 +14,7 @@ export function menuToggleHandler(event) {
 }
 
 export function menuCloseHandler(event) {
-  event.preventDefault();
+  // event.preventDefault();
   event.stopPropagation();
 
   closeNav();
