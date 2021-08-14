@@ -32,10 +32,6 @@
   transition: 0.3s;
 }
 
-.sidenav a:last-child {
-  border-bottom: 1px solid var(--dark-theme-divider-color);
-}
-
 .sidenav a:hover {
   color: var(--dark-theme-text-color);
   font-weight: bold;
@@ -74,6 +70,19 @@
   width: 50px;
   height: 50px;
   border-radius: 5px;
+}
+
+#social-media-links {
+  border-top: 1px solid var(--dark-theme-divider-color);
+  margin-top: 30px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#social-media-links a {
+  margin: 0px;
+  padding: 0px;
 }
 
 @media screen and (max-height: 450px) {
