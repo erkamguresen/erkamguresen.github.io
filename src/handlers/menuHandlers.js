@@ -1,4 +1,4 @@
-import { state } from '../data.js';
+import { state } from '../data/data.js';
 import { closeNav, openNav } from '../view/sideNavMenu.js';
 
 export function menuToggleHandler(event) {

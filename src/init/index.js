@@ -1,7 +1,7 @@
 import '../listeners/sidenavListeners.js';
 
 import { getUserData } from './gitHubData.js';
-import { state } from '../data.js';
+import { state } from '../data/data.js';
 
 state.userGitData = await getUserData();
 
