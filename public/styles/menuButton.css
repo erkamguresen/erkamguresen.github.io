@@ -10,8 +10,5 @@
 #menu-button {
   font-size: 2rem;
   cursor: pointer;
-}
-
-#menu-button-container:hover {
-  color: #fff;
+  color: var(--dark-theme-base-color);
 }
