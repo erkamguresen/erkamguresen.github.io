@@ -13,6 +13,7 @@
 
 .sidenav nav {
   text-align: end;
+  margin-right: 15px;
 }
 .sidenav nav i {
   width: 25px;
@@ -40,6 +41,16 @@
   margin-left: 50px;
 }
 
+.sidenav h1 {
+  color: #818181; /* TODO change it */
+  margin-bottom: 0;
+}
+
+.sidenav p {
+  color: #818181; /* TODO change it */
+  margin-top: 0;
+}
+
 #sideBarContainer {
   height: 100%;
   width: 0;
@@ -50,10 +61,12 @@
   overflow-x: hidden;
 }
 
-/* #main {
-  transition: margin-left 0.5s;
-  padding: 16px;
-} */
+#avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 2px;
+  /* margin: 10px; */
+}
 
 @media screen and (max-height: 450px) {
   .sidenav {
