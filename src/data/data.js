@@ -1,11 +1,21 @@
 export const state = {
   isMenuOpen: false,
   userGitData: {},
-  frontEndProjects: [
-    'erkamguresen/Stopwatch',
-    'erkamguresen/my-to-do-list',
-    'erkamguresen/online-store',
-  ],
+  frontEndProjects: ['Stopwatch', 'my-to-do-list', 'online-store', 'memorize'],
   backEndProjects: [],
-  bookmarklets: ['erkamguresen/YouTube-Captions-Subtitles-Extractor'],
+  bookmarklets: ['YouTube-Captions-Subtitles-Extractor'],
+  projectsGitData: {
+    frontEndProjects: [],
+    backEndProjects: [],
+    bookmarklets: [],
+  },
 };
+
+/*
+TODO can use the followings properties:
+description
+homepage - for demo
+html_url - git repo
+languages_url - languages used
+name
+*/
