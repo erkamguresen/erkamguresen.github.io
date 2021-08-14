@@ -1,8 +1,8 @@
 #menu-button-container {
   width: 30px;
   position: fixed;
-  top: 5px;
-  left: 10px;
+  top: 10px;
+  left: 20px;
   z-index: 100;
   transition: 0.5s;
 }
@@ -10,4 +10,8 @@
 #menu-button {
   font-size: 2rem;
   cursor: pointer;
+}
+
+#menu-button-container:hover {
+  color: #fff;
 }

@@ -1,3 +1,5 @@
+/* @import './root.css'; */
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -5,7 +7,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111; /* TODO change it */
+  background-color: var(--dark-theme-background-color);
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -14,6 +16,7 @@
 .sidenav nav {
   text-align: end;
   margin-right: 15px;
+  margin-left: 15px;
 }
 .sidenav nav i {
   width: 25px;
@@ -24,31 +27,33 @@
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181; /* TODO change it */
+  color: var(--dark-theme-secondary-color);
   display: block;
   transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1; /* TODO change it */
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+  color: var(--dark-theme-text-color);
+  font-weight: bold;
 }
 
 .sidenav h1 {
-  color: #818181; /* TODO change it */
+  color: var(--dark-theme-call-to-action-color);
   margin-bottom: 0;
 }
 
 .sidenav p {
-  color: #818181; /* TODO change it */
+  color: var(--dark-theme-secondary-color);
   margin-top: 0;
+}
+
+.sidenav div.nav-details {
+  border-top: 1px solid var(--dark-theme-divider-color);
+  border-bottom: 1px solid var(--dark-theme-divider-color);
+}
+
+.sidenav span.nav-details {
+  font-size: 1.2rem;
 }
 
 #sideBarContainer {

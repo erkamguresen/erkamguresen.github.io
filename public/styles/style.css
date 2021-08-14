@@ -1,6 +1,7 @@
+@import './root.css';
 @import './menuButton.css';
 @import './sidebar.css';
 
 body {
-  padding: 20px;
+  padding: 25px;
 }
