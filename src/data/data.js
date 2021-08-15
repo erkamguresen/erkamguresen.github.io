@@ -1,7 +1,13 @@
 export const state = {
   isMenuOpen: false,
   userGitData: {},
-  frontEndProjects: ['Stopwatch', 'my-to-do-list', 'online-store', 'memorize'],
+  frontEndProjects: [
+    'Stopwatch',
+    'my-to-do-list',
+    'online-store',
+    'memorize',
+    'loruki_fake_website',
+  ],
   backEndProjects: [],
   bookmarklets: ['YouTube-Captions-Subtitles-Extractor'],
   projectsGitData: {
