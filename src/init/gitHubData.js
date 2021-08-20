@@ -12,20 +12,27 @@ export async function getUserData() {
     console.error(error);
   }
 
+  console.log(userData);
   return userData;
 }
 
 export async function getUserRepositories(repoArray) {
   let repositories = [];
-  repoArray.forEach(async (repoName) => {
+
+  for (let i = 0; i < repoArray.length; i++) {
+    const repoName = repoArray[i];
+    console.log(repoName);
     try {
       const response = await fetch(`${REPOSITORY_BASE_URL}${repoName}`);
       const repositoryData = await response.json();
       repositories.push(repositoryData);
+      console.log(repositoryData);
     } catch (error) {
       console.error(error);
     }
-  });
+  }
 
+  console.log(repositories);
+  console.log(repoArray);
   return repositories;
 }
