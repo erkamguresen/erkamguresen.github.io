@@ -18,70 +18,100 @@
     <title>Erkam G.'s Home Page</title>
   </head>
   <body>
-    <div id="sideBarContainer">
-      <div id="menu-button-container">
-        <span id="menu-button">&#9776;</span>
+    <div id="root" class="root">
+      <div id="sideBarContainer">
+        <div id="menu-button-container">
+          <span id="menu-button">&#9776;</span>
+        </div>
+        <div id="sideNav" class="sidenav">
+          <nav>
+            <img id="avatar" src="./public/images/avatar.jpg" alt="erkam" />
+
+            <h1>Erkam G.</h1>
+            <p>Full Stack Web Developer</p>
+            <a href="#Intro"
+              ><span>Intro</span> <span><i class="fa fa-home"></i></span
+            ></a>
+            <a href="#About"
+              ><span>About Me </span><span><i class="fa fa-user"></i></span
+            ></a>
+            <div class="nav-details">
+              <a href="#Portfolio"
+                ><span>Portfolio</span> <span> <i class="fa fa-th"></i></span
+              ></a>
+              <a href="#Bookmarklets"
+                ><span class="nav-details">Bookmarklets</span>
+                <span class="nav-details"> <i class="fa fa-code"></i></span
+              ></a>
+              <a href="#Front-End"
+                ><span class="nav-details"> Front-End</span>
+                <span class="nav-details"> <i class="fa fa-globe"></i></span
+              ></a>
+              <a href="#Back-End"
+                ><span class="nav-details">Back-End</span>
+                <span class="nav-details"> <i class="fa fa-server"></i></span
+              ></a>
+            </div>
+
+            <a href="#Contact"
+              ><span>Contact</span><span> <i class="fa fa-envelope"></i></span
+            ></a>
+            <div id="social-media-links">
+              <a
+                href="https://www.linkedin.com/in/erkam-g-2a9138208/"
+                target="_blank"
+              >
+                <i class="fa fa-linkedin"></i
+              ></a>
+              <a href="#Contact"> <i class="fa fa-envelope"></i></a>
+              <a href="https://github.com/erkamguresen" target="_blank">
+                <i class="fa fa-github"></i
+              ></a>
+              <a href="https://erkamguresen.github.io/" target="_blank">
+                <i class="fa fa-globe"></i
+              ></a>
+            </div>
+          </nav>
+        </div>
       </div>
-      <div id="sideNav" class="sidenav">
-        <nav>
-          <img id="avatar" src="./public/images/avatar.jpg" alt="erkam" />
 
-          <h1>Erkam G.</h1>
-          <p>Full Stack Web Developer</p>
-          <a href="#Intro"
-            ><span>Intro</span> <span><i class="fa fa-home"></i></span
-          ></a>
-          <a href="#About"
-            ><span>About Me </span><span><i class="fa fa-user"></i></span
-          ></a>
-          <div class="nav-details">
-            <a href="#Portfolio"
-              ><span>Portfolio</span> <span> <i class="fa fa-th"></i></span
-            ></a>
-            <a href="#Bookmarklets"
-              ><span class="nav-details">Bookmarklets</span>
-              <span class="nav-details"> <i class="fa fa-code"></i></span
-            ></a>
-            <a href="#Front-End"
-              ><span class="nav-details"> Front-End</span>
-              <span class="nav-details"> <i class="fa fa-globe"></i></span
-            ></a>
-            <a href="#Back-End"
-              ><span class="nav-details">Back-End</span>
-              <span class="nav-details"> <i class="fa fa-server"></i></span
-            ></a>
-          </div>
+      <div id="main">
+        <div id="About">
+          <h2>About Me</h2>
+          <p>
+            I have worked as an engineer on various projects. From high-tech
+            government projects to Data-Mining and Artificial Intelligence
+            projects. Then my world turned upside down. At that point I could
+            see the empty part of the glass or I could see the full part of the
+            glass.
+          </p>
+          <p>
+            I choose to see that as a new opportunity to start from the
+            beginning. So I asked myself what I want to do with the rest of my
+            life? What job I want to do? What was my dream back then? It was
+            becoming a web developer.
+          </p>
+          <p>
+            I decided to become a full-stack web developer. But how on earth I
+            was going to do that? So, I searched for communities, for sources
+            and for guidance. I find many people helping and sharing their
+            knowledge.
+          </p>
+          <p>
+            This is how my journey started. And below, you can find how far I
+            have gone in my journey.
+          </p>
+        </div>
+        <div id="Portfolio">
+          <div id="Bookmarklets"></div>
+          <div id="Front-End"></div>
+          <div id="Back-End"></div>
+        </div>
 
-          <a href="#Contact"
-            ><span>Contact</span><span> <i class="fa fa-envelope"></i></span
-          ></a>
-          <div id="social-media-links">
-            <a
-              href="https://www.linkedin.com/in/erkam-g-2a9138208/"
-              target="_blank"
-            >
-              <i class="fa fa-linkedin"></i
-            ></a>
-            <a href="#Contact"> <i class="fa fa-envelope"></i></a>
-            <a href="https://github.com/erkamguresen" target="_blank">
-              <i class="fa fa-github"></i
-            ></a>
-            <a href="https://erkamguresen.github.io/" target="_blank">
-              <i class="fa fa-globe"></i
-            ></a>
-          </div>
-        </nav>
+        <div id="Contact"></div>
       </div>
     </div>
 
-    <div id="main"></div>
-    <div id="Portfolio">
-      <div id="Bookmarklets"></div>
-      <div id="Front-End"></div>
-      <div id="Back-End"></div>
-    </div>
-    <div id="About"></div>
-    <div id="Contact"></div>
     <script type="module" src="./src/init/index.js"></script>
   </body>
 </html>

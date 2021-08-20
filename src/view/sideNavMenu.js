@@ -1,4 +1,5 @@
 export function openNav() {
+  //TODO embed this to CSS classes and only change the class here
   document.getElementById('sideNav').style.width = '250px';
 
   document.getElementById('sideBarContainer').style.width = '100%';
@@ -10,6 +11,7 @@ export function openNav() {
 }
 
 export function closeNav() {
+  //TODO embed this to CSS classes and only change the class here
   document.getElementById('sideNav').style.width = '0';
   document.getElementById('sideBarContainer').style.width = '0';
 

@@ -2,12 +2,12 @@ import { createRootDiv } from '../components/rootComponent.js';
 
 export function loadRoot() {
   const mainDiv = document.getElementById('main');
-  while (mainDiv.firstChild) {
-    mainDiv.removeChild(mainDiv.firstChild);
-  }
+  // while (mainDiv.firstChild) {
+  //   mainDiv.removeChild(mainDiv.firstChild);
+  // }
 
   const rootDiv = createRootDiv();
-  mainDiv.appendChild(rootDiv);
+  mainDiv.insertBefore(rootDiv, mainDiv.firstChild);
 
   const introContainerDiv = document.createElement('div');
   introContainerDiv.id = 'intro-container';
