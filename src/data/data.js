@@ -8,7 +8,7 @@ export const state = {
     'memorize',
     'loruki_fake_website',
   ],
-  backEndProjects: [],
+  backEndProjects: ['HYF-chat-app-Backend'],
   bookmarklets: ['YouTube-Captions-Subtitles-Extractor'],
   projectsGitData: {
     frontEndProjects: [],

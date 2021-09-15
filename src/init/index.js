@@ -17,17 +17,13 @@ state.projectsGitData.frontEndProjects = await getUserRepositories(
 const descriptions = renderFrontEndProjects();
 const containerDiv = document.getElementById('Front-End');
 
-const init = async () => {
-  containerDiv.innerHTML = `<h3>Frontend Projects</h3>`;
-  containerDiv.appendChild(descriptions);
+containerDiv.innerHTML = `<h3>Frontend Projects</h3>`;
+containerDiv.appendChild(descriptions);
 
-  state.projectsGitData.backEndProjects = await getUserRepositories(
-    state.backEndProjects
-  );
+state.projectsGitData.backEndProjects = await getUserRepositories(
+  state.backEndProjects
+);
 
-  state.projectsGitData.bookmarklets = await getUserRepositories(
-    state.bookmarklets
-  );
-};
-
-init();
+state.projectsGitData.bookmarklets = await getUserRepositories(
+  state.bookmarklets
+);
