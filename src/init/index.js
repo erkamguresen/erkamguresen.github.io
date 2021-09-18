@@ -27,3 +27,5 @@ state.projectsGitData.backEndProjects = await getUserRepositories(
 state.projectsGitData.bookmarklets = await getUserRepositories(
   state.bookmarklets
 );
+
+console.log(state);
