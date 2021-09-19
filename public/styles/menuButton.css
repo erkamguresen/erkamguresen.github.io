@@ -10,5 +10,6 @@
 #menu-button {
   font-size: 2rem;
   cursor: pointer;
-  color: var(--dark-theme-base-color);
+  /* color: var(--dark-theme-base-color); */
+  color: var(--dark-theme-call-to-action-color);
 }

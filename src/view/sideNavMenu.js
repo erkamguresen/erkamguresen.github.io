@@ -16,5 +16,5 @@ export function closeNav() {
   document.getElementById('sideBarContainer').style.width = '0';
 
   document.getElementById('menu-button').style.color =
-    'var(--dark-theme-base-color)';
+    'var(--dark-theme-call-to-action-color)';
 }
