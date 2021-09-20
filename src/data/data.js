@@ -1,5 +1,6 @@
 export const state = {
-  isMenuOpen: false,
+  menuButtonIntersect: false,
+  sideNavOpen: false,
   userGitData: {},
   frontEndProjects: [
     'Stopwatch',

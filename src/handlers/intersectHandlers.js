@@ -1,10 +1,24 @@
-export function handleIntersect(entries, observer) {
-  console.log('handleIntersect', entries);
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      document.body.classList.add('text-danger');
-    } else {
-      document.body.classList.remove('text-danger');
-    }
-  });
+import { state } from '../data/data.js';
+import { menuButtonChangeColor } from '../view/menuButtonColor.js';
+
+export function handleIntersect(event) {
+  if (
+    'IntersectionObserver' in window &&
+    'IntersectionObserverEntry' in window &&
+    'intersectionRatio' in window.IntersectionObserverEntry.prototype
+  ) {
+    let observer = new IntersectionObserver((entries) => {
+      if (entries[0].intersectionRatio === 0) {
+        state.menuButtonIntersect = true;
+      } else {
+        state.menuButtonIntersect = false;
+      }
+
+      menuButtonChangeColor();
+    });
+    observer.observe(document.getElementById('intro'));
+  } else {
+    //TODO: handle
+    console.log('IntersectionObserver not supported');
+  }
 }
