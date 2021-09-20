@@ -7,9 +7,10 @@ export function generateProjectCard(project) {
   projectDiv.innerHTML = `
     <div class="card my-3">
       <div class="card-header"><h4>${project.items[0].name}</h4></div>
-      <img src="./public/images/projects/${
-        project.items[0].name
-      }.png" class="card-img-top" alt="screen shot of the app" />
+      <a href="${project.items[0].homepage}" class="card-link">
+        <img src="./public/images/projects/${project.items[0].name}.png" 
+        class="card-img-top" alt="screen shot of the app" />
+      </a>
       <div class="card-body">
         <h6 class="card-title">${project.items[0].name}</h6>
         <p class="card-text">
