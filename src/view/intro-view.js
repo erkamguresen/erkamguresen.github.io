@@ -1,13 +1,13 @@
-import { createRootDiv } from '../components/rootComponent.js';
+import { createIntroDiv } from '../components/rootComponent.js';
 
-export function loadRoot() {
+export function loadIntro() {
   const mainDiv = document.getElementById('main');
   // while (mainDiv.firstChild) {
   //   mainDiv.removeChild(mainDiv.firstChild);
   // }
 
-  const rootDiv = createRootDiv();
-  mainDiv.insertBefore(rootDiv, mainDiv.firstChild);
+  const introDiv = createIntroDiv();
+  mainDiv.insertBefore(introDiv, mainDiv.firstChild);
 
   const introContainerDiv = document.createElement('div');
   introContainerDiv.id = 'intro-container';
@@ -27,5 +27,5 @@ export function loadRoot() {
   `;
   introContainerDiv.appendChild(introTextDiv);
 
-  rootDiv.appendChild(introContainerDiv);
+  introDiv.appendChild(introContainerDiv);
 }

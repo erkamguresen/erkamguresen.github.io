@@ -1,13 +1,14 @@
 import '../listeners/sidenavListeners.js';
+import '../listeners/menuButtonListener.js';
 
 import { getUserData, getUserRepositories } from './gitHubData.js';
 import { state } from '../data/data.js';
-import { loadRoot } from '../view/root-view.js';
+import { loadIntro } from '../view/intro-view.js';
 import { renderFrontEndProjects } from '../view/frontEndProjects.js';
 import { renderBackEndProjects } from '../view/backEndProjects.js';
 import { renderBookmarkletProjects } from '../view/bookmarkletProjects.js';
 
-loadRoot();
+loadIntro();
 
 state.userGitData = await getUserData();
 document.getElementById('avatar').src = state.userGitData.avatar_url;
