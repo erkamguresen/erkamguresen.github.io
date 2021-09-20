@@ -3,6 +3,8 @@
 @import './sidebar.css';
 @import './intro.css';
 
+@import './contact.css';
+
 body {
   margin: 0;
   padding: 0;

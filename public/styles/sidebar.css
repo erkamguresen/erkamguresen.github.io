@@ -94,3 +94,35 @@
     font-size: 18px;
   }
 }
+
+/* @media screen and (min-width: 768px) {
+  .sidenav {
+    height: 100%;
+    width: 250px;
+    position: relative;
+
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-color: var(--dark-theme-background-color);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    overflow: hidden;
+  }
+  #sideBarContainer {
+    
+    height: 100%;
+    max-width: 250px;
+    position: relative;
+
+    z-index: 0;
+
+    left: 0;
+  }
+  #main {
+    width: 100%;
+    height: 100%;
+  }
+} 
+*/

@@ -1,6 +1,6 @@
-export function createRootDiv() {
-  const rootDiv = document.createElement('div');
-  rootDiv.id = 'root';
+export function createIntroDiv() {
+  const introDiv = document.createElement('div');
+  introDiv.id = 'intro';
 
-  return rootDiv;
+  return introDiv;
 }
