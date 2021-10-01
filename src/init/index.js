@@ -1,6 +1,5 @@
 import '../listeners/sidenavListeners.js';
 import '../listeners/menuButtonListener.js';
-// import '../listeners/windowSizeListener.js';
 
 import { getUserData, getUserRepositories } from './gitHubData.js';
 import { state } from '../data/data.js';
@@ -9,7 +8,7 @@ import { renderFrontEndProjects } from '../view/frontEndProjects.js';
 import { renderBackEndProjects } from '../view/backEndProjects.js';
 import { renderBookmarkletProjects } from '../view/bookmarkletProjects.js';
 
-loadIntro();
+// loadIntro();
 
 state.userGitData = await getUserData();
 document.getElementById('avatar').src = state.userGitData.avatar_url;
