@@ -8,7 +8,7 @@ import { renderFrontEndProjects } from '../view/frontEndProjects.js';
 import { renderBackEndProjects } from '../view/backEndProjects.js';
 import { renderBookmarkletProjects } from '../view/bookmarkletProjects.js';
 
-loadIntro();
+// loadIntro();
 
 state.userGitData = await getUserData();
 document.getElementById('avatar').src = state.userGitData.avatar_url;
@@ -16,6 +16,11 @@ document.getElementById('avatar').src = state.userGitData.avatar_url;
 // state.projectsGitData.frontEndProjects = await getUserRepositories(
 //   state.frontEndProjects
 // );
+
+const bookmarkletProjects = renderBookmarkletProjects();
+
+const bookmarkletContainer = document.getElementById('Bookmarklets');
+bookmarkletContainer.appendChild(bookmarkletProjects);
 
 const frontEndProjects = renderFrontEndProjects();
 
@@ -34,10 +39,5 @@ backEndContainer.appendChild(backEndProjects);
 // state.projectsGitData.bookmarklets = await getUserRepositories(
 //   state.bookmarklets
 // );
-
-const bookmarkletProjects = renderBookmarkletProjects();
-
-const bookmarkletContainer = document.getElementById('Bookmarklets');
-bookmarkletContainer.appendChild(bookmarkletProjects);
 
 console.log(state);
