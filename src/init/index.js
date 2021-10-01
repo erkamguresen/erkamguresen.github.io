@@ -17,6 +17,11 @@ document.getElementById('avatar').src = state.userGitData.avatar_url;
 //   state.frontEndProjects
 // );
 
+const bookmarkletProjects = renderBookmarkletProjects();
+
+const bookmarkletContainer = document.getElementById('Bookmarklets');
+bookmarkletContainer.appendChild(bookmarkletProjects);
+
 const frontEndProjects = renderFrontEndProjects();
 
 const frontEndContainer = document.getElementById('Front-End');
@@ -34,10 +39,5 @@ backEndContainer.appendChild(backEndProjects);
 // state.projectsGitData.bookmarklets = await getUserRepositories(
 //   state.bookmarklets
 // );
-
-const bookmarkletProjects = renderBookmarkletProjects();
-
-const bookmarkletContainer = document.getElementById('Bookmarklets');
-bookmarkletContainer.appendChild(bookmarkletProjects);
 
 console.log(state);
