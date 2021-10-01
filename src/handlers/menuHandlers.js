@@ -5,7 +5,7 @@ export function menuToggleHandler(event) {
   event.preventDefault();
   event.stopPropagation();
 
-  if (state.isMenuOpen) {
+  if (state.isMenuOpen && window.innerWidth < 768) {
     closeNav();
   } else {
     openNav();

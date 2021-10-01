@@ -1,5 +1,6 @@
 import '../listeners/sidenavListeners.js';
 import '../listeners/menuButtonListener.js';
+// import '../listeners/windowSizeListener.js';
 
 import { getUserData, getUserRepositories } from './gitHubData.js';
 import { state } from '../data/data.js';
