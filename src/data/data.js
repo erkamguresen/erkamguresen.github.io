@@ -10,7 +10,11 @@ export const state = {
     'loruki_fake_website',
   ],
   backEndProjects: ['HYF-chat-app-Backend'],
-  bookmarklets: ['Youtube-Ads-Skipper', 'Search-The-Highlighted'],
+  bookmarklets: [
+    'Youtube-Ads-Skipper',
+    'Search-The-Highlighted',
+    'Translate-The-Highlighted',
+  ],
   projectsGitData: {
     frontEndProjects: [],
     backEndProjects: [],
@@ -250,6 +254,35 @@ export const data = {
 
           homepage: 'https://erkamguresen.github.io/Search-The-Highlighted/',
           size: 8,
+          stargazers_count: 0,
+          watchers_count: 0,
+          language: 'HTML',
+        },
+      ],
+    },
+    {
+      total_count: 1,
+      incomplete_results: false,
+      items: [
+        {
+          id: 412882124,
+          node_id: 'R_kgDOGJwUzA',
+          name: 'Translate-The-Highlighted',
+          full_name: 'erkamguresen/Translate-The-Highlighted',
+          private: false,
+
+          html_url: 'https://github.com/erkamguresen/Translate-The-Highlighted',
+          description:
+            'This is a custom Bookmarklet to translate the selected text. Just drag and drop the bookmarklet to your browsers bookmark panel. When you are in a page highlight a text and click the bookmarklet from the bookmark. Then a new page is opened using google translation.',
+          fork: false,
+          url: 'https://api.github.com/repos/erkamguresen/Translate-The-Highlighted',
+
+          created_at: '2021-10-02T18:37:00Z',
+          updated_at: '2021-10-02T20:08:12Z',
+          pushed_at: '2021-10-02T20:02:20Z',
+
+          homepage: 'https://erkamguresen.github.io/Translate-The-Highlighted/',
+          size: 3,
           stargazers_count: 0,
           watchers_count: 0,
           language: 'HTML',
