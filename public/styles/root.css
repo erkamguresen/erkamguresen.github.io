@@ -25,11 +25,11 @@
   display: block;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .root {
     display: flex;
     flex-direction: row;
     align-items: stretch;
     height: 100%;
   }
-}
+} */
