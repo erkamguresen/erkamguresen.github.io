@@ -9,9 +9,11 @@ import { renderFrontEndProjects } from '../view/frontEndProjects.js';
 import { renderBackEndProjects } from '../view/backEndProjects.js';
 import { renderBookmarkletProjects } from '../view/bookmarkletProjects.js';
 
+// User Part
 state.userGitData = await getUserData();
 document.getElementById('avatar').src = state.userGitData.avatar_url;
 
+// Bookmarklets part
 const resultBookmarklets = await getUserRepositories(state.bookmarklets);
 
 let areResultsComplete = true;
@@ -37,6 +39,7 @@ const bookmarkletProjects = renderBookmarkletProjects();
 const bookmarkletContainer = document.getElementById('Bookmarklets');
 bookmarkletContainer.appendChild(bookmarkletProjects);
 
+// Frontend Part
 const resultFrontEnd = await getUserRepositories(state.frontEndProjects);
 
 areResultsComplete = true;
@@ -62,6 +65,7 @@ const frontEndProjects = renderFrontEndProjects();
 const frontEndContainer = document.getElementById('Front-End');
 frontEndContainer.appendChild(frontEndProjects);
 
+// Backend Part
 const resultBackend = await getUserRepositories(state.backEndProjects);
 
 areResultsComplete = true;
