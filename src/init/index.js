@@ -3,7 +3,6 @@ import '../listeners/menuButtonListener.js';
 
 import { getUserData, getUserRepositories } from './gitHubData.js';
 import { state } from '../data/data.js';
-
 import { data } from '../data/storedData.js';
 
 import { renderFrontEndProjects } from '../view/frontEndProjects.js';
@@ -30,9 +29,6 @@ for (let i = 0; i < resultBookmarklets.length; i++) {
 if (!areResultsComplete) {
   state.projectsGitData.bookmarklets = data.bookmarklets;
 }
-
-// state.projectsGitData.frontEndProjects = data.frontEndProjects;
-// state.projectsGitData.backEndProjects = data.backEndProjects;
 
 if (areResultsComplete) {
   state.projectsGitData.bookmarklets = resultBookmarklets;
