@@ -1,6 +1,6 @@
 export function generateProjectCard(project) {
   const projectDiv = document.createElement('div');
-  projectDiv.className = 'col-lg-4';
+  projectDiv.className = 'col-xl-4';
 
   const date = new Date(Date.parse(project.items[0].pushed_at));
 
