@@ -26,12 +26,10 @@ for (let i = 0; i < resultBookmarklets.length; i++) {
   }
 }
 
-if (!areResultsComplete) {
-  state.projectsGitData.bookmarklets = data.bookmarklets;
-}
-
 if (areResultsComplete) {
   state.projectsGitData.bookmarklets = resultBookmarklets;
+} else {
+  state.projectsGitData.bookmarklets = data.bookmarklets;
 }
 
 const bookmarkletProjects = renderBookmarkletProjects();
@@ -53,7 +51,9 @@ for (let i = 0; i < resultFrontEnd.length; i++) {
   }
 }
 
-if (!areResultsComplete) {
+if (areResultsComplete) {
+  state.projectsGitData.bookmarklets = resultFrontEnd;
+} else {
   state.projectsGitData.frontEndProjects = data.frontEndProjects;
 }
 
@@ -76,7 +76,9 @@ for (let i = 0; i < resultBackend.length; i++) {
   }
 }
 
-if (!areResultsComplete) {
+if (areResultsComplete) {
+  state.projectsGitData.backEndProjects = resultBackend;
+} else {
   state.projectsGitData.backEndProjects = data.backEndProjects;
 }
 
