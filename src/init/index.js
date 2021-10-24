@@ -52,7 +52,7 @@ for (let i = 0; i < resultFrontEnd.length; i++) {
 }
 
 if (areResultsComplete) {
-  state.projectsGitData.bookmarklets = resultFrontEnd;
+  state.projectsGitData.frontEndProjects = resultFrontEnd;
 } else {
   state.projectsGitData.frontEndProjects = data.frontEndProjects;
 }
