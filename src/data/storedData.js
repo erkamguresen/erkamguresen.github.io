@@ -179,6 +179,34 @@ export const data = {
         },
       ],
     },
+    {
+      total_count: 1,
+      incomplete_results: false,
+      items: [
+        {
+          id: 397528290,
+          node_id: 'MDEwOlJlcG9zaXRvcnkzOTc1MjgyOTA=',
+          name: 'Nodejs-online-store',
+          full_name: 'erkamguresen/Nodejs-online-store',
+          private: false,
+
+          html_url: 'https://github.com/erkamguresen/Nodejs-online-store',
+          description:
+            'A online shop written in full backend with NodeJs and Pug',
+          fork: false,
+
+          created_at: '2021-08-18T08:30:36Z',
+          updated_at: '2021-12-14T08:06:48Z',
+          pushed_at: '2021-12-14T08:06:45Z',
+
+          homepage: 'https://online-electronics-shop.herokuapp.com/',
+          size: 1183,
+          stargazers_count: 0,
+          watchers_count: 0,
+          language: 'JavaScript',
+        },
+      ],
+    },
   ],
   bookmarklets: [
     {
