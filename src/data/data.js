@@ -9,7 +9,7 @@ export const state = {
     'memorize',
     'loruki_fake_website',
   ],
-  backEndProjects: ['HYF-chat-app-Backend'],
+  backEndProjects: ['HYF-chat-app-Backend', 'Nodejs-online-store'],
   bookmarklets: [
     'Youtube-Ads-Skipper',
     'Search-The-Highlighted',
