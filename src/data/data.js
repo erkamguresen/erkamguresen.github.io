@@ -6,7 +6,7 @@ export const state = {
     'Stopwatch',
     'my-to-do-list',
     'online-store',
-    'memorize',
+    // 'memorize',
     'loruki_fake_website',
   ],
   backEndProjects: ['HYF-chat-app-Backend', 'Nodejs-online-store'],
